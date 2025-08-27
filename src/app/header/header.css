@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Glass effect navbar */
+.navbar {
+  background: rgba(255, 0, 0, 0.6) !important;/* red with transparency */
+  backdrop-filter: blur(20%) !important;       /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand{
+    size: 80px;
+}
+/* Navbar brand & links */
+.navbar ,
+.navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+  color: black !important;
+}
+
+/* Active link */
+.navbar .nav-link.active {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+/* Search button */
+.navbar .btn-outline-success {
+  border-color: white;
+  color: white;
+}
+
+.navbar .btn-outline-success:hover {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+/* Dropdown menu with glass red */
+.dropdown-menu {
+  background: rgba(255, 0, 0, 0.7);  /* red transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  color: white;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.3);  /* slight glass hover */
+}
