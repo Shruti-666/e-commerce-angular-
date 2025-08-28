@@ -11,6 +11,54 @@
       "name": "harshit",
       "email": "xyz@gmail.com",
       "password": "abc@123"
+    },
+    {
+      "id": "00d4",
+      "name": "khushi",
+      "email": "xyz@gmail.com",
+      "password": "123@abc"
+    },
+    {
+      "id": "6847",
+      "name": "shruti vats",
+      "email": "shruti@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "2b5a",
+      "name": "khushi",
+      "email": "shruti@gmail.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "5333",
+      "name": "khushi",
+      "email": "xyz@gmail.com",
+      "password": "123@abc"
+    },
+    {
+      "id": "062b",
+      "name": "polo",
+      "email": "polo@gmail.com",
+      "password": "abc@1234"
+    },
+    {
+      "id": "e23b",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "b8fe",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "abfd",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "abc@123"
     }
   ]
 }
