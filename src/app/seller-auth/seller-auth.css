@@ -74,3 +74,16 @@ form label {
   background: linear-gradient(135deg,  rgba(194, 3, 3, 0.7), rgba(255, 0, 0, 0.7));
 }
 
+.pointer{
+  cursor:pointer;
+}
+
+.form-link{
+  color: blueviolet;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  
+}

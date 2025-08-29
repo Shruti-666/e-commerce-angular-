@@ -59,6 +59,36 @@
       "name": "polo",
       "email": "shruti@gmail.com",
       "password": "abc@123"
+    },
+    {
+      "id": "f363",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "123@abc"
+    },
+    {
+      "id": "fa66",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "6a8e",
+      "name": "test",
+      "email": "test@test.com",
+      "password": "test123"
+    },
+    {
+      "id": "9964",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "0627",
+      "name": "",
+      "email": "",
+      "password": ""
     }
   ]
 }

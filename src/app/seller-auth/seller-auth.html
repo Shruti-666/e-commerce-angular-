@@ -1,23 +1,69 @@
-<form #sellerSignUp = "ngForm" >
-  <div class="form-row">
-    <div class="form-group ">
-      <label for="inputEmail4"> Enter Name</label>
-      <input type="email" class="form-control" ngModel name="name" id="inputEmail4"/>
+<!-- Signup Form -->
+@if (!showLogin) {
+  <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="inputName">Enter Name</label>
+        <input
+          type="text"
+          class="form-control"
+          ngModel
+          name="name"
+          id="inputName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Enter Email</label>
+        <input
+          type="email"
+          class="form-control"
+          ngModel
+          name="email"
+          id="inputEmail"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Enter Password</label>
+        <input
+          type="password"
+          class="form-control"
+          ngModel
+          name="password"
+          id="inputPassword"
+        />
+      </div>
     </div>
-    <div class="form-group ">
-      <label for="inputEmail4"> Enter Email</label>
-      <input type="email" class="form-control" ngModel name="email" id="inputEmail4" />
+    <a class="form-link" (click)="openLogin()">Already Have Account? <span class= "pointer">Click to Login</span></a>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+}
+
+<!-- Login Form -->
+@if (showLogin) {
+  <form #sellerLogin="ngForm" (ngSubmit)="logIn(sellerLogin.value)">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="loginEmail">Enter Email</label>
+        <input
+          type="email"
+          class="form-control"
+          ngModel
+          name="email"
+          id="loginEmail"
+        />
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Enter Password</label>
+        <input
+          type="password"
+          class="form-control"
+          ngModel
+          name="password"
+          id="loginPassword"
+        />
+      </div>
     </div>
-    <div class="form-group">
-      <label for="inputPassword4"> Enter Password</label>
-      <input type="password" class="form-control" ngModel name="password" id="inputPassword4" />
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck" />
-      <label class="form-check-label" for="gridCheck"> Check me out </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary" routerLink="seller-home" >Sign in</button>
-</form>
+        <a class="form-link" (click)="openSignUp()">Don't Have Account? <span class= "pointer">Click to Sign Up</span></a>
+    <button type="submit" class="btn btn-primary">Log In</button>
+  </form>
+}
