@@ -89,6 +89,12 @@
       "name": "",
       "email": "",
       "password": ""
+    },
+    {
+      "id": "d736",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "12345"
     }
   ]
 }
