@@ -16,5 +16,6 @@ export const routes: Routes = [
     {
         path:'seller-home',
         component: SellerHome,
+        canActivate: [authGuard]
     }
 ];

@@ -95,6 +95,24 @@
       "name": "polo",
       "email": "shruti@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "4148",
+      "name": "papil",
+      "email": "papil@test.com",
+      "password": "12345"
+    },
+    {
+      "id": "f6d7",
+      "name": "polo",
+      "email": "shruti@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "0649",
+      "name": "mukesh",
+      "email": "mukesh@test.com",
+      "password": "mukesh@123"
     }
   ]
 }

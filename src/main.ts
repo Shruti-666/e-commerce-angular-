@@ -10,3 +10,4 @@ bootstrapApplication(App, {
     provideHttpClient(withInterceptorsFromDi())   // ✅ add HttpClient provider here
   ]
 }).catch((err) => console.error(err));
+

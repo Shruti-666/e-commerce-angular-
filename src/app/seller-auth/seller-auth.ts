@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router} from '@angular/router';
 import { Seller } from '../services/seller';
@@ -13,17 +13,17 @@ import { CommonModule } from '@angular/common';
   templateUrl: './seller-auth.html',
   styleUrl: './seller-auth.css'
 })
-export class SellerAuth {
+export class SellerAuth implements OnInit{
   constructor(private seller:Seller, private router: Router){
+  }
+  ngOnInit(): void{
+    this.seller.reloadSeller()
   }
   showLogin = false
   signUp(data:SignUp):void{
     // console.warn(data)
-    this.seller.userSignUp(data).subscribe((result)=>{
-      if(result){
-        this.router.navigate(['/seller-home'])
-      }
-    })
+    console.warn(data);
+    this.seller.userSignUp(data);
   }
   logIn(data:SignUp):void{
     // console.warn(data)
