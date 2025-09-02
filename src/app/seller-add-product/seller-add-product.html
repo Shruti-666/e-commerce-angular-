@@ -1,13 +1,14 @@
 
 <h1 class="text-center">Add Product</h1>
-@if (checkaddProduct) {
+@if (checkaddProduct | async; as message) {
   <div class="text-center">
-    <p class="text-success d-inline">{{ addProductMessage }}</p>
-  </div>
-}
+    
+    <p class="text-success d-inline">{{ message }}</p>
+  </div>}
+
 <form #addProduct ="ngForm" (ngSubmit)="AddProduct(addProduct.value)">
   <div class="form-row">
-    <div class="form-group ">
+    <div class="form-group "> 
       <label for="inputEmail4">Name</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Product Name" ngModel name="name">
     </div>

@@ -14,20 +14,20 @@ import { BehaviorSubject } from 'rxjs';
   styleUrl: './seller-add-product.css',
 })
 export class SellerAddProduct {
-  checkaddProduct = new BehaviorSubject<boolean>(false)
-  addProductMessage: string | undefined;
+  checkaddProduct = new BehaviorSubject<string | null>(null)
+  // addProductMessage: string | undefined;
   constructor(private product: Product,private cd: ChangeDetectorRef) {}
   AddProduct(data: product) {
     console.warn(data);
     this.product.addProduct(data).subscribe((result) => {
       console.warn(result);
       if (result) {
-        this.checkaddProduct.next(true)
-        this.addProductMessage = "Product Successfully Added";
-        console.warn(this.checkaddProduct)
+        this.checkaddProduct.next('Product Successfully Added')
+        // this.addProductMessage = "Product Successfully Added";
+        // console.warn(this.checkaddProduct)
         this.cd.detectChanges();
       }
-      setTimeout(() => (this.addProductMessage = undefined), 3000);
+      setTimeout(() => this.checkaddProduct.next(null), 3000);
     });
   }
 }
