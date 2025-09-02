@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { LoginIn, SignUp } from '../data-type';
 import { Router } from '@angular/router';
@@ -9,6 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class Seller {
   isSellerLoggedIn= new BehaviorSubject<boolean>(false)
+  isLoginError = new EventEmitter<boolean>(false)
   constructor(private http: HttpClient, private router: Router) {}
   userSignUp(data: SignUp) {
     this.http.post('http://localhost:3000/seller',
@@ -39,6 +40,7 @@ export class Seller {
       }
       else{
         console.warn("login failed")
+        this.isLoginError.emit(true)
       }
     })
   }
