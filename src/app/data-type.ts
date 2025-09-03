@@ -15,5 +15,6 @@ export interface product{
     category: string,
     color:string,
     img: string,
-    desc: string
+    desc: string,
+    id: string
 }

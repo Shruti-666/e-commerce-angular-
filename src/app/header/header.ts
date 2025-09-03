@@ -17,7 +17,7 @@ export class Header implements OnInit {
       if (data.url) {
         // console.warn(data.url)
         if (localStorage.getItem('seller') && data.url.includes('seller')) {
-          console.warn('in seller area');
+          // console.warn('in seller area');
           this.menuType = 'seller';
           if(localStorage.getItem('seller')){
             let sellerStore=localStorage.getItem('seller');
@@ -25,7 +25,7 @@ export class Header implements OnInit {
             this.sellerName =sellerData.name
           }
         } else {
-          console.warn('outside seller');
+          // console.warn('outside seller');
           this.menuType = 'default';
         }
       }

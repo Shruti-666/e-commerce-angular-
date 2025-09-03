@@ -1,0 +1,42 @@
+img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/* Keep table aligned left */
+.custom-table {
+  width: auto;              /* shrink to fit content */
+  margin-left: 0;           /* align left */
+}
+
+/* Only keep bottom borders */
+.custom-table td, 
+.custom-table th {
+  border-bottom: 1px solid #dee2e6; /* light gray bottom border */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  vertical-align: middle;   /* align text vertically center */
+  padding: 8px 12px;        /* smaller padding */
+}
+table.custom-table > thead > tr > th {
+  background: linear-gradient(135deg, rgba(194, 3, 3, 0.7), rgba(255, 0, 0, 0.7)) !important;
+  color: white !important;
+}
+.btn-primary {
+  width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.7), blueviolet);
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+  margin-top: 5px;
+}
+.btn-primary:hover {
+  /* background: linear-gradient(135deg,   blueviolet, rgba(255, 0, 0, 0.7)); */
+  background: whitesmoke;
+  color: black;
+
+}
