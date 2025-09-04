@@ -1,0 +1,92 @@
+/* seller-auth.css */
+
+/* Form container */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.form-group{
+    display:flex;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+.form-group label {
+  min-width: 120px;   /* enough width for text */
+  margin-right: 10px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap; /* prevent label from breaking */
+}
+
+.form-group .form-control,
+.form-group select {
+  flex: 1;            /* take up full remaining space */
+  max-width: 100%;    /* no shrinking */
+}
+/* Labels */
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  max-width: 100%;
+}
+
+/* On focus */
+.form-control:focus {
+  border-color: blueviolet;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+}
+
+/* Checkbox */
+.form-check-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.form-check-input {
+  margin-right: 8px;
+}
+
+/* Submit button */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, blueviolet, rgba(194, 3, 3, 0.7));
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg,  rgba(194, 3, 3, 0.7), blueviolet);
+}
+
+.pointer{
+  cursor:pointer;
+}
+
+.form-link{
+  color: blueviolet;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  
+}
+h1{
+  margin-top: 40px;
+}
